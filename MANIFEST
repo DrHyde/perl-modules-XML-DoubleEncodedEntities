@@ -4,3 +4,4 @@ Makefile.PL
 README
 lib/XML/DoubleEncodedEntities.pm
 t/all.t
+MANIFEST.SKIP
