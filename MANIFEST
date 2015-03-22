@@ -1,7 +1,9 @@
-CHANGES
 MANIFEST
 Makefile.PL
 README
 lib/XML/DoubleEncodedEntities.pm
 t/all.t
 MANIFEST.SKIP
+CHANGELOG
+t/pod-coverage.t
+t/pod.t

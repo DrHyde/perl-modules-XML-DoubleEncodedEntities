@@ -6,12 +6,14 @@ require Exporter;
 
 use vars qw($VERSION @EXPORT_OK @ISA);
 
-$VERSION = '1.0';
+$VERSION = '1.1';
 @EXPORT_OK = qw(decode);
 @ISA = qw(Exporter);
 
 # localising prevents the warningness leaking out of this module
 local $^W = 1;    # can't use warnings as that's a 5.6-ism
+
+=encoding ISO8859-1
 
 =head1 NAME
 
@@ -43,7 +45,9 @@ This module tries to fix that.
     
     my $xmlfile = XML::DoubleEncodedEntities::decode($xmlfile);
 
-=head1 The C<decode> function
+=head1 Functions
+
+=head2 decode
 
 This function is not exported, but can be if you wish.  It takes one
 scalar parameter and returns a corresponding scalar, decoded if necessary.
