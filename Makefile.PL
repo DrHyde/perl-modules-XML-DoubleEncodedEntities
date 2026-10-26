@@ -2,8 +2,10 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME         => 'XML::DoubleEncodedEntities',
-    META_MERGE => {
+    META_ADD => {
         license => 'open_source',
+},
+META_MERGE => {
         resources => {
 	    repository => 'https://github.com/DrHyde/perl-modules-XML-DoubleEncodedEntities',
 	    bugtracker => 'https://github.com/DrHyde/perl-modules-XML-DoubleEncodedEntities/issues'
